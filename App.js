@@ -1,9 +1,9 @@
-import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from "@react-navigation/stack";
-import { useFonts } from 'expo-font';
 import React from 'react';
-import Tabs from "./navigation/tabs";
 import { SignUp } from "./screens";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { useFonts } from 'expo-font';
+import Tabs from "./navigation/tabs";
 
 
 const theme = {
@@ -39,7 +39,7 @@ const App = () => {
                 {/* Tabs */}
                 <Stack.Screen name="Home" component={Tabs} />
 
-                <Stack.Screen name="Scan" component={Scan} />
+                {/* <Stack.Screen name="Scan" component={Scan} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )
